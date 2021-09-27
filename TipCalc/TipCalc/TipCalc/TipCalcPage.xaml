@@ -27,7 +27,7 @@
 			<ColumnDefinition Width="*" />
 		</Grid.ColumnDefinitions>
 		<!-- Row 0 -->
-		<Label Text="Food &amp; Drink(1):" Grid.Row="0" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+		<Label Text="Food &amp; Drink(2):" Grid.Row="0" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
 		<Entry Grid.Row="0" Grid.Column="1" Keyboard="Numeric" Placeholder="Subtotal" Text="{Binding SubTotal, &#xA;                           Converter={StaticResource stringConverter}}" />
 		<!-- Row 1 -->
 		<Label Text="Total after Tax:" Grid.Row="1" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
@@ -47,5 +47,9 @@
 		<ContentView BackgroundColor="#40808080" Grid.Row="5" Grid.Column="1" Padding="10, 10, 40, 10">
 			<Label Text="{Binding Total, &#xA;                              StringFormat='{0:C}'}" Font="Large" HorizontalTextAlignment="End" />
 		</ContentView>
-	</Grid>
+        <!--row 6-->
+        <Label Text="crash me:" Grid.Row="6" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+        <Button Text="Crash me" Grid.Row="6" Grid.Column="1" Padding="10, 10, 40, 10" Clicked="Button_Clicked" />
+
+    </Grid>
 </ContentPage>
