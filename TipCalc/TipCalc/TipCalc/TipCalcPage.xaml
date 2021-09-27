@@ -47,9 +47,9 @@
 		<ContentView BackgroundColor="#40808080" Grid.Row="5" Grid.Column="1" Padding="10, 10, 40, 10">
 			<Label Text="{Binding Total, &#xA;                              StringFormat='{0:C}'}" Font="Large" HorizontalTextAlignment="End" />
 		</ContentView>
-        <!--row 6-->
+        <!--row 6--><!--
         <Label Text="crash me:" Grid.Row="6" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
-        <Button Text="Crash me" Grid.Row="6" Grid.Column="1" Padding="10, 10, 40, 10" Clicked="Button_Clicked" />
+        <Button Text="Crash me" Grid.Row="6" Grid.Column="1" Padding="10, 10, 40, 10" Clicked="Button_Clicked" />-->
 
     </Grid>
 </ContentPage>
