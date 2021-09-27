@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AppCenter.Analytics;
+using System;
 using System.ComponentModel;
 
 namespace TipCalc
@@ -98,6 +99,7 @@ namespace TipCalc
 
             // Round total to nearest quarter.
             this.Total = Math.Round(4 * (this.PostTaxTotal + this.TipAmount)) / 4;
+            Analytics.TrackEvent("Recalculate called");
         }
 
         protected void OnPropertyChanged(string propertyName)
